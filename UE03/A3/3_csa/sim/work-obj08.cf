@@ -1,0 +1,13 @@
+v 4
+file "/home/vagrant/Downloads/template/3_csa/" "tb/testbench.vhd" "aecafff835e6d1dfbf9e124506f427047b9ec41b" "20260415151151.399":
+  entity testbench at 3( 14) + 0 on 17;
+  architecture test of testbench at 8( 143) + 0 on 18;
+file "/home/vagrant/Downloads/template/3_csa/" "src/cond_sum_add.vhd" "3478f1ce2e23bd7a6ca14ca0fb31b365dc1966c1" "20260415151151.376":
+  entity adder at 1( 0) + 0 on 11;
+  architecture rtl_adder of adder at 10( 259) + 0 on 12;
+file "/home/vagrant/Downloads/template/3_csa/" "src/fa_ea.vhd" "808d800c0e3f7b7b35cd9b5476c6f0ed5f788481" "20260415151151.377":
+  entity fa at 1( 0) + 0 on 13;
+  architecture rtl_fa of fa at 14( 235) + 0 on 14;
+file "/home/vagrant/Downloads/template/3_csa/" "src/mux_ea.vhd" "2e6eb2ced7a25d521eb52bfafee3ae4f9b201f7c" "20260415151151.378":
+  entity mux at 1( 0) + 0 on 15;
+  architecture rtl_mux of mux at 13( 211) + 0 on 16;
