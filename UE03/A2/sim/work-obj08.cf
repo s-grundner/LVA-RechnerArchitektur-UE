@@ -1,0 +1,11 @@
+v 4
+file "/home/vagrant/Downloads/k12308175_ue03_a2/" "tb/testbench.vhd" "510c792198b16b7f87898a3947ffb69833255d7a" "20260415151536.894":
+  entity testbench at 3( 14) + 0 on 17;
+  architecture test of testbench at 8( 143) + 0 on 18;
+file "/home/vagrant/Downloads/k12308175_ue03_a2/" "src/comparator.vhd" "61e79341ecfcf85868974be01001e7ecf11cca12" "20260415151536.872":
+  entity fa at 1( 0) + 0 on 11;
+  architecture rtl of fa at 7( 126) + 0 on 12;
+  entity adder at 13( 232) + 0 on 13;
+  architecture rtl of adder at 21( 450) + 0 on 14;
+  entity comparator at 40( 816) + 0 on 15;
+  architecture rtl of comparator at 46( 984) + 0 on 16;
