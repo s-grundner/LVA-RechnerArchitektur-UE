@@ -1,0 +1,8 @@
+[ -d sim ] || mkdir -p sim
+tb/testbench.vhd:32:5:@40ns:(report note): 15 + 10 = 25 (OF:'0') / ref: 25 (OF:'0')
+tb/testbench.vhd:39:5:@80ns:(report note): 111 + 80 = -65 (OF:'1') / ref: 191 (OF:'1')
+tb/testbench.vhd:47:5:@120ns:(report note): 19 - 46 = -27 (OF:'0') / ref: -27 (OF:'0')
+tb/testbench.vhd:54:5:@160ns:(report note): -15 - (-10) = -5 (OF:'0') / ref: -5 (OF:'0')
+tb/testbench.vhd:61:5:@200ns:(report note): -111 - 80 = 65 (OF:'1') / ref: -191 (OF:'1')
+tb/testbench.vhd:63:5:@200ns:(report note): -------------
+tb/testbench.vhd:92:5:@983240ns:(report note): No failure found.

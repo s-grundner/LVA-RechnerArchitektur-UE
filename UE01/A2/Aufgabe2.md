@@ -1,0 +1,20 @@
+# Aufgabe 2: Fibonacci Zahlen
+
+## a)
+
+> Speichere die größtmögliche Fibbonacci-Zahl `Y` in `a0` und den Index `k` in `a1`.
+
+Am Ende der Ausführung haben `a0` und `a1` folgende Werte
+
+- a0 = 2971215073
+- a1 = 47
+
+# b)
+
+> Gib an, warum ein einfacher Vergleich mittels `bltu` zwischen `Fk` und `MAX_VAL(2^32 − 1)` nicht möglich ist.
+
+Die Register sind 32 Bit breit. Der Fall, dass das Register einen Wert über 2^32-1 annimmt ist nicht möglich. Wenn also Fk 2^32 - 1 übersteigt, kann das Register den größeren wert nicht mehr speichern und es wird das 33-te Bit nicht mehr verglichen.
+
+Hier wurde das so gelöst, dass wenn die Summe von Fk + Fk-1 plötzlich kleiner als Fk ist, die Schleifenbedingung erfüllt ist, da dann ein Überlauf passiert ist.
+
+

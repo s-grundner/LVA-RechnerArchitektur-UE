@@ -1,0 +1,11 @@
+v 4
+file "/home/simon/Documents/MEGA/xEDU/B6_SS26/RA/UE/UE03/A1/" "tb/testbench.vhd" "548e1f5787d25469548f1a9efe574cb60eb58179" "20260412173947.871":
+  entity testbench at 3( 14) + 0 on 25;
+  architecture test of testbench at 11( 143) + 0 on 26;
+file "/home/simon/Documents/MEGA/xEDU/B6_SS26/RA/UE/UE03/A1/" "src/add_sub.vhd" "cf8454e78427cb8ebc33814b8530cc30f3a2bfd8" "20260412173947.862":
+  entity fa at 3( 126) + 0 on 19;
+  architecture rtl of fa at 13( 281) + 0 on 20;
+  entity adder at 21( 540) + 0 on 21;
+  architecture rtl of adder at 37( 861) + 0 on 22;
+  entity add_sub at 58( 1386) + 0 on 23;
+  architecture rtl of add_sub at 73( 1681) + 0 on 24;
