@@ -1,0 +1,12 @@
+v 4
+file "/home/simon/Uni/RA-UE/UE04/A2/" "tb/testbench.vhd" "45652f63b389bb29431d5ecd62ffa953aeb68971" "20260429160605.952":
+  entity testbench at 1( 0) + 0 on 57;
+  architecture test of testbench at 9( 138) + 0 on 58;
+file "/home/simon/Uni/RA-UE/UE04/A2/" "src/cra.vhd" "3781bacbe4c0bca07f9d2ef662750785939d2af4" "20260429160605.945":
+  entity fa at 3( 95) + 0 on 51;
+  architecture rtl of fa at 13( 250) + 0 on 52;
+  entity cra at 21( 486) + 0 on 53;
+  architecture rtl of cra at 36( 782) + 0 on 54;
+file "/home/simon/Uni/RA-UE/UE04/A2/" "src/mult_ea_struct.vhd" "0ceccaa81a530ae00d52538ecb3829b71f16aaa3" "20260429160605.945":
+  entity mult at 3( 97) + 0 on 55;
+  architecture rtl of mult at 17( 379) + 0 on 56;
