@@ -1,0 +1,51 @@
+a)
+
+.data
+result: .float 0.0          # variable for result
+
+.text
+.global main
+main:
+    addi t0, zero, 8        # t0 = 8
+    addi t1, zero, 1        # t1 = 1
+    fcvt.s.wu ft0, t1       # ft0 = float(t1) = 1.0
+    fcvt.s.wu ft2, t1       # ft2 = float(t1) = 1.0
+
+loop:
+    beq t0, t1, end         # jump out of loop if t1 == 8
+    fcvt.s.wu ft1, t1       # ft1 = float(t1)
+    fdiv.s ft2, ft2, ft1    # ft2 = ft2 / ft1
+    fadd.s ft0, ft0, ft2    # ft0 = ft0 + ft2
+    addi t1, t1, 1          # t1++
+    jal zero, loop          # jump back to top of loop
+
+end:
+    la t1, result           # load address of result
+    fsw ft0, 0(t2)          # store ft0 into result
+
+Der Code ist ein Algorithmus für die Berechnung von e
+
+b)
+
+float result = 0.0f;
+
+int main() {
+    unsigned int t0 = 8;
+    unsigned int t1 = 1;
+
+    float ft0 = (float)t1;
+    float ft2 = (float)t1;
+
+    while (t1 != t0) {
+        float ft1 = (float)t1;
+        ft2 = ft2 / ft1;
+        ft0 = ft0 + ft2;
+        t1++;
+    }
+
+    result = ft0;
+}
+
+c)
+
+Das Ergebnis im Register ft0 ist 0x402df7df, was umgerechnet 2.718497753 in Dezimal ist
