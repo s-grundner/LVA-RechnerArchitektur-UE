@@ -1,55 +1,55 @@
 v 4
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "tb/testbench.vhdl" "3f59d21713f3d7040ef9889dded329e12233e9a8" "20260524113028.922":
-  entity testbench at 1( 0) + 0 on 189;
-  architecture tb of testbench at 12( 300) + 0 on 190;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/register_file.vhdl" "47c77bf77794e360e343abc4211f86fcd24cf0ed" "20260524113028.918":
-  entity register_file at 1( 0) + 0 on 187;
-  architecture bhv of register_file at 19( 558) + 0 on 188;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_4_ea.vhdl" "0941082b3b3c0ed67bc175541c6f0f332097a638" "20260524113028.915":
-  entity mux_4 at 1( 0) + 0 on 185;
-  architecture bhv_mux_4 of mux_4 at 16( 433) + 0 on 186;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_3.vhdl" "9775f1d90d9ce89649989515dd591a0707b001b9" "20260524113028.912":
-  entity mux_3 at 1( 0) + 0 on 183;
-  architecture bhv of mux_3 at 12( 333) + 0 on 184;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_2.vhdl" "69793315f6975352e28d294f116fa504d34ada9a" "20260524113028.909":
-  entity mux_2 at 1( 0) + 0 on 181;
-  architecture bhv of mux_2 at 10( 203) + 0 on 182;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/main_decoder.vhdl" "237dfb54131241ea639a7e96da3dfe2c013583ed" "20260524113028.906":
-  entity main_decoder at 1( 0) + 0 on 179;
-  architecture bhv of main_decoder at 15( 472) + 0 on 180;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/instruction_memory.vhdl" "fe6940c1faa7a6ea8a439d5b5b0a4ed2eae9314d" "20260524113028.903":
-  entity instruction_memory at 1( 0) + 0 on 177;
-  architecture bhv of instruction_memory at 15( 386) + 0 on 178;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/extend_rd_ea.vhdl" "d0f4e030541ea96730e9c97c3c201d0a2910db23" "20260524113028.900":
-  entity extend_rd at 1( 0) + 0 on 175;
-  architecture bhv_extend_rd of extend_rd at 15( 359) + 0 on 176;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/extend.vhdl" "3f1f2f6d35e8722d1d60bded1479b6159d26054f" "20260524113028.897":
-  entity extend at 1( 0) + 0 on 173;
-  architecture bhv of extend at 11( 283) + 0 on 174;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/datapath.vhdl" "424902c42b0f4283ef9b7f517dbf0c0f1864a164" "20260524113028.894":
-  entity datapath at 1( 0) + 0 on 171;
-  architecture struct of datapath at 27( 937) + 0 on 172;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/data_memory.vhdl" "13cdbf05e40e671af455027a65ea6cbade3f93a9" "20260524113028.890":
-  entity data_memory at 1( 0) + 0 on 169;
-  architecture bhv of data_memory at 15( 407) + 0 on 170;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/d_ff.vhdl" "703590a3c83e55006ca7b040ca49fdbfed45bf04" "20260524113028.887":
-  entity d_ff at 1( 0) + 0 on 167;
-  architecture bhv of d_ff at 12( 300) + 0 on 168;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/control_unit.vhdl" "f3f768e186ecb631829aa43073346c399ef978a8" "20260524113028.882":
-  entity control_unit at 1( 0) + 0 on 165;
-  architecture struct of control_unit at 23( 777) + 0 on 166;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/alu_decoder.vhdl" "21ff9d3cd52fa94158e0ca8641fb176dca016002" "20260524113028.879":
-  entity alu_decoder at 1( 0) + 0 on 163;
-  architecture bhv of alu_decoder at 13( 351) + 0 on 164;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/alu.vhdl" "469954baab7da36c0d03731da4f5b0ab3d83929f" "20260524113028.877":
-  entity alu at 1( 0) + 0 on 161;
-  architecture bhv of alu at 13( 336) + 0 on 162;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/adder.vhdl" "23bfd340021f2b4e43f4f1f7a3c31bb0a40d5d16" "20260524113028.874":
-  entity adder at 1( 0) + 0 on 159;
-  architecture bhv of adder at 10( 211) + 0 on 160;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/ICS-EDU-RV32I-SC.vhdl" "c742ad5a30fa9f74ce04bdd290927e47047bbb16" "20260524113028.872":
-  entity ics_edu_rv32i_sc at 86( 2855) + 0 on 157;
-  architecture struct of ics_edu_rv32i_sc at 99( 3151) + 0 on 158;
-file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "pkg/pkg_riscv_sc.vhdl" "25de6d901d91a56fe7f3bd56cb856b8d8d1c71da" "20260524113028.869":
-  package pkg_riscv_sc at 2( 1) + 0 on 155 body;
-  package body pkg_riscv_sc at 57( 2880) + 0 on 156;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "tb/testbench.vhdl" "2ec298598fd25d4250ab41fedd0bf032f997317a" "20260524134120.234":
+  entity testbench at 1( 0) + 0 on 261;
+  architecture tb of testbench at 12( 311) + 0 on 262;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/register_file.vhdl" "d698390c92de0d4826e9814f6243e12bb5c86ca8" "20260524134120.231":
+  entity register_file at 1( 0) + 0 on 259;
+  architecture bhv of register_file at 19( 576) + 0 on 260;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_4_ea.vhdl" "0941082b3b3c0ed67bc175541c6f0f332097a638" "20260524134120.228":
+  entity mux_4 at 1( 0) + 0 on 257;
+  architecture bhv_mux_4 of mux_4 at 16( 433) + 0 on 258;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_3.vhdl" "330d3b4fcffe7a7c5e77752d5b51adc7fa8d9ffb" "20260524134120.226":
+  entity mux_3 at 1( 0) + 0 on 255;
+  architecture bhv of mux_3 at 12( 344) + 0 on 256;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/mux_2.vhdl" "791c038e8eb94df61a5c8dfab2f654d24eeff49c" "20260524134120.223":
+  entity mux_2 at 1( 0) + 0 on 253;
+  architecture bhv of mux_2 at 10( 212) + 0 on 254;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/main_decoder.vhdl" "e6fd0c3098bedfc10eec248436bd02b658d0b5cc" "20260524134120.220":
+  entity main_decoder at 1( 0) + 0 on 251;
+  architecture bhv of main_decoder at 15( 486) + 0 on 252;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/instruction_memory.vhdl" "40d529055c4a70cb527314f09310520096d98b0b" "20260524134120.217":
+  entity instruction_memory at 1( 0) + 0 on 249;
+  architecture bhv of instruction_memory at 15( 400) + 0 on 250;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/extend_rd_ea.vhdl" "ef74ab21351e30a3eb68c3db6a515bc725b019e2" "20260524134120.214":
+  entity extend_rd at 1( 0) + 0 on 247;
+  architecture bhv_extend_rd of extend_rd at 16( 415) + 0 on 248;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/extend.vhdl" "99e1ca52ceb8b8facf15f1007da713c08018be78" "20260524134120.212":
+  entity extend at 1( 0) + 0 on 245;
+  architecture bhv of extend at 11( 293) + 0 on 246;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/datapath.vhdl" "968c8e6032296bcfa45b9548ea6f81238d06bbba" "20260524134120.208":
+  entity datapath at 1( 0) + 0 on 243;
+  architecture struct of datapath at 27( 963) + 0 on 244;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/data_memory.vhdl" "07996424607e3071a35f40d3a8447b06e163869c" "20260524134120.205":
+  entity data_memory at 1( 0) + 0 on 241;
+  architecture bhv of data_memory at 15( 421) + 0 on 242;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/d_ff.vhdl" "326f7a194d965595aee4440afcb3b9e9277dd3ad" "20260524134120.202":
+  entity d_ff at 1( 0) + 0 on 239;
+  architecture bhv of d_ff at 12( 311) + 0 on 240;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/control_unit.vhdl" "6220d32a3f0f10723ff357704a9a6fb84d660f69" "20260524134120.199":
+  entity control_unit at 1( 0) + 0 on 237;
+  architecture struct of control_unit at 23( 799) + 0 on 238;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/alu_decoder.vhdl" "e53be72fc5a9616943680bcabdddf6119fd14bf0" "20260524134120.196":
+  entity alu_decoder at 1( 0) + 0 on 235;
+  architecture bhv of alu_decoder at 13( 363) + 0 on 236;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/alu.vhdl" "bb85d9e761a2ccd068693ff487b347d87bad1bef" "20260524134120.193":
+  entity alu at 1( 0) + 0 on 233;
+  architecture bhv of alu at 13( 348) + 0 on 234;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/adder.vhdl" "9f823e4655b32132744158bb9ce2e146b29d8575" "20260524134120.190":
+  entity adder at 1( 0) + 0 on 231;
+  architecture bhv of adder at 10( 220) + 0 on 232;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "rtl/ICS-EDU-RV32I-SC.vhdl" "59ed1c64a1e959cf9fea836c0487f530075bd8dd" "20260524134120.187":
+  entity ics_edu_rv32i_sc at 86( 2940) + 0 on 229;
+  architecture struct of ics_edu_rv32i_sc at 99( 3249) + 0 on 230;
+file "/mnt/c/DEV/Uni/SS2026/LVA-RechnerArchitektur-UE/Project/template/" "pkg/pkg_riscv_sc.vhdl" "e49e984f259d6f1f5bef1dd8df2c56907d77a7b2" "20260524134120.184":
+  package pkg_riscv_sc at 2( 2) + 0 on 227 body;
+  package body pkg_riscv_sc at 57( 2936) + 0 on 228;

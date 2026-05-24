@@ -102,6 +102,7 @@ architecture struct of datapath is
     port(
       LoadType_i : in  std_ulogic_vector(LOAD_INSTR_TYPE_SIZE - 1 downto 0);
       ReadData_i : in  std_ulogic_vector(31 downto 0);
+      AddrLSB_i  : in std_ulogic_vector (1 downto 0);
       RDExt_o    : out std_ulogic_vector(31 downto 0)
     );
   end component extend_rd;
@@ -120,7 +121,7 @@ begin
   pcaddbranch : adder   port map(PC, ImmExt, PCTarget);
   pcmux       : mux_3   port map(PCPlus4, PCTarget, ALUResult, PCSrc, PCNext);
   ext         : extend  port map(Instr(31 downto 7), ImmSrc, ImmExt);
-  extRD       : extend_rd port map(LoadType, ReadData, RDExt);
+  extRD       : extend_rd port map(LoadType, ReadData, ALUResult(1 downto 0), RDExt);
     
   -- register file and memory logic
   imem: instruction_memory  generic map (TEXT_SEGMENT) port map(reset, PC, Instr);
