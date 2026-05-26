@@ -6,7 +6,7 @@ FILEDIR = ./files
 SIMDIR = sim
 STOP_TIME = 2000ns
 
-TEXT_FILE = "$(FILEDIR)/text.txt"
+TEXT_FILE = "$(FILEDIR)/text_custom_instruction.txt"
 DATA_FILE = "$(FILEDIR)/data.txt"
 REGS_FILE = "$(FILEDIR)/regs.txt"
 

@@ -19,13 +19,14 @@ package pkg_riscv_sc is
   constant A0_REG : integer := 10;
   constant A1_REG : integer := 11;
 
-  constant ALU_CTRL_SIZE  : integer := 3;
-  constant ALU_CTRL_ADD   : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "000";
-  constant ALU_CTRL_SUB   : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "001";
-  constant ALU_CTRL_AND   : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "010";
-  constant ALU_CTRL_OR    : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "011";
-  constant ALU_CTRL_SLT   : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "101";
-  constant ALU_CTRL_UKNWN : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "---";
+  constant ALU_CTRL_SIZE      : integer := 3;
+  constant ALU_CTRL_ADD       : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "000";
+  constant ALU_CTRL_SUB       : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "001";
+  constant ALU_CTRL_AND       : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "010";
+  constant ALU_CTRL_OR        : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "011";
+  constant ALU_CTRL_BYTE_SUM  : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "100";
+  constant ALU_CTRL_SLT       : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "101";
+  constant ALU_CTRL_UKNWN     : std_ulogic_vector(ALU_CTRL_SIZE-1 downto 0) := "---";
 
 
   constant IMM_SRC_SIZE : integer := 3;

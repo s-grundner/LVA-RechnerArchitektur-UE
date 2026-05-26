@@ -12,9 +12,17 @@ end;
 
 architecture bhv of alu is
   signal sum :          STD_ULOGIC_VECTOR(31 downto 0);
+  signal byte_sum :     STD_ULOGIC_VECTOR(31 downto 0);
 begin
   sum <= std_ulogic_vector(unsigned(a) + unsigned(b)) when Alucontrol(0)='0' else  -- a + b
          std_ulogic_vector(unsigned(a) + unsigned(not(b)) + 1);                    -- a + (-b)
+
+  byte_sum <= std_ulogic_vector(
+               resize(unsigned(a(7 downto 0)), 32) + 
+               resize(unsigned(a(15 downto 8)), 32) +
+               resize(unsigned(a(23 downto 16)), 32) +
+                resize(unsigned(a(31 downto 24)), 32)
+  );
 
   process(a,b,ALUControl,sum) begin
     case ALUControl is
@@ -22,6 +30,7 @@ begin
       when ALU_CTRL_AND                   => ALUResult <= a and b;
       when ALU_CTRL_OR                    => ALUResult <= a or b;
       when ALU_CTRL_SLT                   => ALUResult <= (0 => sum(31), others => '0');
+      when ALU_CTRL_BYTE_SUM              => ALUResult <= byte_sum;
       when others                         => ALUResult <= (others => 'X');
     end case;
   end process;
