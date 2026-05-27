@@ -26,7 +26,6 @@ begin
       when "1110011" => controls <= "0---00--00001"; -- ECALL
       when "1100111" => controls <= "1000101000010"; -- jalr
       when "0010111" => controls <= "1100--1100000"; -- auipc
-      when "0001011" => controls <= "1---000001100"; -- bytesum
       when others    => controls <= "-------------"; -- not valid
     end case;
   end process;

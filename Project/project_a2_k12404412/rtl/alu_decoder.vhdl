@@ -30,8 +30,6 @@ begin
           when "111" =>   ALUControl <= ALU_CTRL_AND; -- and, andi
           when others =>  ALUControl <= ALU_CTRL_UKNWN; -- unknown
         end case;
-      when "11" => 
-        ALUControl <= ALU_CTRL_BYTE_SUM; -- bytesum
       when others => 
         ALUControl <= ALU_CTRL_UKNWN; -- unknown
     end case;
